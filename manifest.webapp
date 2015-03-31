@@ -1,0 +1,22 @@
+{
+  "name": "Effecter",
+  "description": "Take Picture and Effect",
+  "type": "privileged",
+  "launch_path": "/index.html",
+  "permissions": {
+    "video-capture": {},
+    "audio-capture": {},
+    "camera": {
+      "description": "Required for accessing cameras on the device."
+    }
+  },
+  "locales": {
+    "en-US": {
+      "name": "Effecter",
+      "description": "Web app Take Picture and Effect"
+    }
+  },
+  "icons": {
+    "128": "/style/icons/icon128x128.png"
+  }
+}

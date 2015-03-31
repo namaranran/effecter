@@ -1,0 +1,134 @@
+body {
+  background-color: #444;
+  overflow: hidden;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+button.change-screen {
+  height: 40px;
+  font-size: 1.5em;
+  background: #aaa;
+  border: none;
+  color: #fff;
+  border-radius: 3px;
+  margin-left: 10px;
+}
+
+button::-moz-focus-inner {
+  border: 0;
+}
+
+h3.title-3 {
+  border-bottom: 5px #FF9F55 solid;
+  padding-bottom: 5px;
+  padding-left: .3em;
+  font-size: 1.8em;
+  color: #eee;
+}
+
+ul {
+  list-style: none;
+  padding-left: 10px;
+}
+
+li {
+  padding-top: 20px;
+}
+
+button:active {
+  background: #ffa15c;
+}
+
+input[type="file"] {
+  height: 40px;
+  border: none;
+  background: #444;
+  margin: 0 auto;
+  color: #ddd;
+  font-size: 1em;
+  padding: 10px 0 0 20px;
+}
+
+.range {
+  width: 85%;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+}
+
+input[type="range"] {
+  height: 30px;
+  width: 100%;
+  border: none;
+  background: #444;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+
+input[type="range"]::-moz-range-track {
+  width: 100%;
+  background: #eee;
+  height: 7px;
+  border: solid 1px gray;
+  border-radius: 10px;
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 30px;
+  height: 30px;
+  background:  url(../image/pointer.png) no-repeat;
+  background-size: 30px 30px;
+  border: none;
+}
+
+#launch_camera {
+  position: fixed !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background: #444;
+  color: #fff;
+  z-index: 10;
+}
+
+#menu_area,
+#user_operation_area {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background: #444;
+  color: white;
+  padding: 10px;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  z-index: 10;
+}
+
+#canvas_area {
+  margin: 0 auto;
+  margin-top: 20px;
+  z-index: 5;
+}
+
+.visible {
+  visibility: visible;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+p {
+  font-size: 1.5em;
+  color: #eee;
+}
+
+.rotate {
+  transform: rotate(90deg);
+}
+

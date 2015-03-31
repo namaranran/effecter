@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+<meta charset="utf-8">
+<title>Take Picture and Effect Demo</title>
+
+<!-- Seriously.js library -->
+<script src="./js/seriously.js"></script>
+<script src="./js/effects/seriously.vignette.js"></script>
+
+<!-- Screens -->
+<script src="./js/views/top_screen.js"></script>
+<script src="./js/views/camera_api_screen.js"></script>
+<script src="./js/views/get_user_media_screen.js"></script>
+<script src="./js/views/moz_camera_screen.js"></script>
+<script src="./js/views/preview_screen.js"></script>
+<script src="./js/views/effect_screen.js"></script>
+
+<!-- function -->
+<script src="./js/picture_effect.js"></script>
+<script src="./js/camera.js"></script>
+<script src="./js/screen_manager.js"></script>
+<script src="./js/main.js"></script>
+
+<link rel="stylesheet" href="style/main.css" type="text/css">
+</head>
+<body id="body">
+
+<!-- Top Screen -->
+<div id="top_screen" data-role="page">
+  <h3 class="title-3">Camera Capture Smaple</h3>
+  <ul>
+    <li>
+    <button id="btn_change_screen_camera_api" class="change-screen">Camera API</button>
+    </li>
+    <li>
+    <button id="btn_change_screen_get_user_media" class="change-screen">getUserMedia</button>
+    </li>
+    <li>
+    <button id="btn_change_screen_moz_camera" class="change-screen">mozCameras</button>
+    </li>
+  </ul>
+</div>
+
+<!-- Camera API Screen -->
+<div id="camera_api_screen" data-role="page">
+  <h3 class="title-3">Camera API Sample</h3>
+  <input id="file" type="file" accept="image/*" capture>
+</div>
+
+<!-- getUserMedia() Screen -->
+<div id="get_user_media_screen" data-role="page">
+  <h3 class="title-3">getUserMedia Sample</h3>
+  <ul>
+    <li>
+    <button id="btn_get_user_media_launc_camera" class="change-screen">Launc Camera</button>
+    </li>
+  </ul>
+  <div>
+    <p id="moz_camera_launc_camera_result"></p>
+  </div>
+</div>
+
+<!-- mozCamera Screen -->
+<div id="moz_camera_screen" data-role="page">
+  <h3 class="title-3">mozCamera Sample</h3>
+  <ul>
+    <li>
+    <button id="btn_moz_camera_launc_camera" class="change-screen">Launc Camera</button>
+    </li>
+  </ul>
+  <div>
+    <p id="moz_camera_launc_camera_result"></p>
+  </div>
+</div>
+
+<!-- Preview Screen -->
+<div id="preview_screen" data-role="page">
+  <video id="video" width="360" height="550"></video>
+  <div id="user_operation_area">
+    <button id="btn_take_picture" class="change-screen">Take Picture</button>
+  </div>
+</div>
+
+<!-- Effect Screen -->
+<div id="effect_screen" data-role="page">
+  <div id="canvas_area">
+    <canvas id="canvas"></canvas>
+  </div>
+  <div id="menu_area">
+    <div class="range">
+    <input type="range" id="vignette-range" min="0" max="20" step="0.0001" value="1"/>
+    </div>
+  </div>
+  <img id="preview" height="150" class="hidden">
+</div>
+
+</div>
+
+</body>
+</html>
